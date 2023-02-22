@@ -15,6 +15,7 @@ font-family: 'Sriracha', cursive;
 body{
     background-color: white;
     font-family:'Sriracha', cursive;
+    min-height: 100vh;
 }
 
 header{
@@ -56,7 +57,7 @@ a:hover{
     height: 300px;
     width: 300px;
     line-height: 2em;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 21px;
     padding:20px 10px 20px 20px;
     margin: 10px;
@@ -68,7 +69,7 @@ a:hover{
     height: 300px;
     width: 300px;
     line-height: 2em;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 21px;
     padding: 30px 10px 90px 20px; 
     margin: 10px;   
@@ -94,7 +95,7 @@ section#flor{
     height: 350px;
     width: 250px;
     
-    font-weight: bold;
+    font-weight: normal;
     font-size: 20px;
     text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.438);
     
@@ -108,7 +109,9 @@ section#flor{
 
 section#letra{
     background-image: url(imagens/background002.jpg);
+    display: inline-block;
     height: 600px;
+    min-width:500px ;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -123,7 +126,7 @@ section#letra{
     height: 350px;
     width: 250px;
     
-    font-weight: bold;
+    font-weight: normal;
     font-size: 20px;
     text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.784);
     
