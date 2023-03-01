@@ -13,11 +13,28 @@
         table{
             border-collapse: collapse;
             width: 500px;
+            position: relative;
+        }
+
+        caption{
+            font-size: 1.5em;
+            background-color: lightgray;
+            padding: 10px;
         }
 
         thead, tfoot{
-            background-color: yellow;
-            color: black;
+            background-color: rgb(112, 112, 112);
+            color: white;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: rgb(112, 112, 112) ;
+        }
+
+        tbody > tr:nth-child(odd){
+            background-color: lightgray;
         }
 
         td, th{
@@ -36,11 +53,12 @@
 </head>
 <body>
     <table>
+        <caption>População por Estado</caption>
         <thead>
             <tr>
-                <th>Posição</th>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Posição</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
         <tbody>
@@ -182,7 +200,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td>=</td>
                 <td class="numero"><strong>208 000 000</strong></td>
             </tr>
