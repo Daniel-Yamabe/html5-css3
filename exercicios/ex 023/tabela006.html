@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas em Telas Pequenas</title>
+    <style>
+        table{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            border-collapse: collapse;
+        }
+
+        th, td{
+            border: 2px solid black;
+            padding: 10px;
+        }
+
+        tbody>tr:nth-child(odd){
+            background-color: gray;
+        }
+        
+
+        div#container{
+            overflow-x:auto ;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas mais Responsivas</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate facilis quis totam recusandae nobis doloribus illum, ipsum possimus nulla! Repellendus quaerat fugiat saepe, quas dolor cupiditate nisi nobis quae pariatur!</p>
+
+    <div id="container">
+        <table>
+            <caption>Tabela Responsiva</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Produto</th>
+                    <th scope="col">Jan</th>
+                    <th scope="col">Fev</th>
+                    <th scope="col">Mar</th>
+                    <th scope="col">Abr</th>
+                    <th scope="col">Mai</th>
+                    <th scope="col">Jun</th>
+                    <th scope="col">Jul</th>
+                    <th scope="col">Ago</th>
+                    <th scope="col">Set</th>
+                    <th scope="col">Out</th>
+                    <th scope="col">Nov</th>
+                    <th scope="col">Dez</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">PlayStation</th>
+                    <td>8</td>
+                    <td>17</td>
+                    <td>33</td>
+                    <td>70</td>
+                    <td>55</td>
+                    <td>300</td>
+                    <td>12</td>
+                    <td>66</td>
+                    <td>132</td>
+                    <td>290</td>
+                    <td>500</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <th scope="row">Xbox</th>
+                    <td>50</td>
+                    <td>122</td>
+                    <td>11</td>
+                    <td>100</td>
+                    <td>256</td>
+                    <td>33</td>
+                    <td>78</td>
+                    <td>90</td>
+                    <td>86</td>
+                    <td>300</td>
+                    <td>700</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <th scope="row">Iphone</th>
+                    <td>100</td>
+                    <td>500</td>
+                    <td>400</td>
+                    <td>567</td>
+                    <td>789</td>
+                    <td>800</td>
+                    <td>1050</td>
+                    <td>327</td>
+                    <td>100</td>
+                    <td>200</td>
+                    <td>1</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <th scope="row">Nintendo</th>
+                    <td>20</td>
+                    <td>30</td>
+                    <td>578</td>
+                    <td>70</td>
+                    <td>90</td>
+                    <td>500</td>
+                    <td>213</td>
+                    <td>21</td>
+                    <td>45</td>
+                    <td>50</td>
+                    <td>90</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <th scope="row">PC</th>
+                    <td>100</td>
+                    <td>300</td>
+                    <td>500</td>
+                    <td>200</td>
+                    <td>150</td>
+                    <td>50</td>
+                    <td>500</td>
+                    <td>32</td>
+                    <td>12</td>
+                    <td>510</td>
+                    <td>680</td>
+                    <td>1</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
